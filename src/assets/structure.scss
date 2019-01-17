@@ -33,6 +33,8 @@ body {
   border-radius: 8px;
   -webkit-box-shadow: 0 0 60px 0 rgba(0,0,0,0.75);
   box-shadow: 0 0 60px 0 rgba(0,0,0,0.75);
+  animation-duration: 800ms;
+  animation-name: size;
   h1 {
     color: #369933;
     font-weight: 900;
@@ -49,5 +51,17 @@ body {
       font-weight: 900;
       color: #369933;
     }
+  }
+}
+
+@keyframes size {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width: 33vw;
   }
 }
